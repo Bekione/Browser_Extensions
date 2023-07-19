@@ -3,12 +3,15 @@
 */
 const logo = document.getElementById("jpLogo");
 const prettifyBtn = document.getElementById("prettifyButton");
+const copyBtn = document.querySelector(".clipboard_copy");
 const resultEl = document.querySelector(".textarea_output");
 const inputJson = document.getElementById("jsonInput")
 
 logo.addEventListener("click", () => {
     inputJson.value = "";
     resultEl.innerHTML = "";
+    copyBtn.style.display = "none";
+
   });
 
 const prettifyJson = () => {
@@ -54,7 +57,20 @@ const updateResult = () => {
 
     if (success) {
         outputEl.style.height = "130px";
-    } 
+        copyBtn.style.display = "block";
+    } else {
+        copyBtn.style.display = "none";
+    }
+}
+
+function copyToClipboard() {
+    const outputEl = document.getElementById("jsonOutput");
+    outputEl.select();
+    document.execCommand("copy");
+    copyBtn.classList.add('clicked')
+
+    setTimeout(() => {copyBtn.classList.remove('clicked')}, 1200)
 }
 
 prettifyBtn.addEventListener("click", updateResult);
+copyBtn.addEventListener("click", copyToClipboard);
