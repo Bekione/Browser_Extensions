@@ -1,2 +1,2 @@
-# Broswer_Extensions
+# Browser_Extensions
 Simple but important JavaScript browser extensions for developers.
