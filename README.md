@@ -4,6 +4,8 @@ Simple but important JavaScript browser extensions for developers.
 ## Extension 1
 ### JSON Prettifier (formatter)
 A browser extension that prettifies or format JSON data by adding proper indentations.
+![JSON Prettifier extension snap](https://github.com/Bekione/Browser_Extensions/assets/112067722/eed8ecff-035f-4f77-afb9-062fee4e15bb)
+
 
 ## How to add the extension?
 * Clone this repository
