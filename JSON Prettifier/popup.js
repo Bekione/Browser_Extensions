@@ -34,7 +34,7 @@ const prettifyJson = () => {
     }
   
     try {
-        var jsonObject = JSON.parse(jsonInput);
+        var jsonObject = JSON5.parse(jsonInput);
         output = JSON.stringify(jsonObject, null, 2);      
     } 
     catch (error) {
