@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <link rel="stylesheet" href="style.css">
+  <title>JSON Prettifier | By Bereket</title>
+</head>
+<body>
+    <div class="json_prettify_wrapper">
+        <header>
+            <div class="extension_logo">
+                <img id="jpLogo" src="./assets/JP-Logo-128x128.png" alt="JSON prettify logo" title="Refresh">
+            </div>
+            <div class="extension_title">
+                <h2>JSON Prettifier/Formatter</h2>
+            </div>
+        </header>
+        <main>
+            <div class="json_input_wrapper">
+                <textarea id="jsonInput" placeholder="Enter you json text here"></textarea>
+                <button id="prettifyButton">Prettify</button>
+            </div>
+            <div class="json_output_wrapper">
+                <div class="textarea_output">
+                    <textarea id="jsonOutput" readonly></textarea>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 JSON Prettifier by <a href="https://github.com/Bekione">Bereket</a>.</p>
+        </footer>
+    </div>
+  
+    <script src="popup.js"></script>  
+</body>
+</html>
